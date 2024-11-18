@@ -1,0 +1,19 @@
+name: Download File and Push to Main
+on: 
+  workflow_dispatch:
+jobs:
+  download_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download File
+        run: wget http://down.bfxitong.com/2024/2407/win11-64c-24.7.gho  # 将这里的链接替换为你实际要下载的文件的HTTP链接
+      - name: Add and Commit File
+        run: |
+          git add.
+          git commit -m "Add downloaded file"
+      - name: Push to Main Branch
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
