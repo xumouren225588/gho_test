@@ -10,7 +10,7 @@ jobs:
         run: wget 'https://download.bt.cn/install/install_lts.sh'  # 将这里的链接替换为你实际要下载的文件的HTTP链接
       - name: Add and Commit File
         run: |
-          git add.
+          git add .
           git commit -m "Add downloaded file"
       - name: Push to Main Branch
         uses: ad-m/github-push-action@v0.6.0
