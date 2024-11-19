@@ -15,4 +15,3 @@ jobs:
           git add .
           git commit -m "添加Windows7镜像"
           git push
-
