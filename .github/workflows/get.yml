@@ -13,6 +13,6 @@ jobs:
           git config --local user.email "xumouren225588@163.com"
           git config --local user.name "xumouren225588"
           git add .
-          git commit -m "添加测试文件"
+          git commit -m "添加Windows7镜像"
           git push
 
